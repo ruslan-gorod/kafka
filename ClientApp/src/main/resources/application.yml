@@ -1,0 +1,16 @@
+server:
+  port: 8078
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pizzeria
+    username: postgres
+    password: 1
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: client-group
